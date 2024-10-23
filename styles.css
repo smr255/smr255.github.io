@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url('images/soft-background.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333; /* Color del texto por defecto */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login-box,
+.register-box,
+.classified-box {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px; /* Ancho general para las cajas de login y registro */
+    transition: transform 0.3s;
+}
+
+.login-box:hover,
+.register-box:hover {
+    transform: scale(1.02);
+}
+
+.logo {
+    width: 200px; /* Tamaño aumentado a 200px */
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #5c67f2; /* Color del título */
+    font-weight: 500;
+    border-bottom: 2px solid #5c67f2;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #333;
+    margin-top: 20px;
+}
+
+.textbox {
+    margin: 15px 0;
+}
+
+.textbox input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.textbox input:focus {
+    border-color: #5c67f2;
+    outline: none;
+    box-shadow: 0 0 5px rgba(92, 103, 242, 0.5);
+}
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #5c67f2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #4a54e1;
+    transform: translateY(-2px);
+}
+
+p {
+    margin-top: 15px;
+    color: #666;
+}
+
+a {
+    color: #5c67f2;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #4a54e1;
+}
+
+.message {
+    margin-top: 20px;
+    color: #28a745; /* Verde para mensajes de éxito */
+    font-weight: bold;
+}
+
+.alert {
+    color: #d9534f; /* Color rojo para alertas */
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #d9534f;
+    border-radius: 5px;
+    background: rgba(255, 228, 228, 0.8);
+}
+
+ul {
+    margin-left: 20px;
+    list-style-type: disc;
+}
